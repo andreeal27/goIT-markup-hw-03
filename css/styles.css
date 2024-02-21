@@ -1,0 +1,124 @@
+
+:root{
+    --text-font-family: "Roboto",sans-serif,arial;
+    --title-font-family: "Raleway",sans-serif,arial;
+    --body-color:#434455;
+    --title-color: #2E2F42;
+    --hover-color: #404BBF;
+/* slate: #434455 
+navy blue: #2E2F42
+white: #fffffff
+black: #000000*/
+/* hero section */
+
+}
+.logo::before,
+.end-logo::before
+{ 
+    content: "WEB";
+    color: #4D5AE5;
+}
+
+.logo{
+    color:var(--title-color);
+    font-family: var(--title-font-family);
+    font-weight: 800;
+}
+.end-section .end-logo
+{
+    color: #F4F4FD;
+    font-family:var(--title-font-family);
+    font-weight: 800;
+}
+.end-section{
+    background-color: var(--title-color);
+}
+.end-section .end-text{
+    color:#F4F4FD;
+}
+
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+
+}
+.head-bar .nav-bar a{
+    font-weight:500;
+    font-size: 16px;
+    line-height: 1.5;
+    color:var(--title-color);
+}
+.head-bar .nav-bar a:hover,
+.head-bar .nav-bar a:focus {
+    color: var(--hover-color);
+}
+body {
+    font-family: var(--text-font-family);
+    color: var(--body-color);
+    font-size: 16px;
+    line-height: 1.5;
+}
+h1 {
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 1.06;
+    color: #ffffff;
+}
+.button-service{
+    background-color:#4D5AE5;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button-service:hover,
+.button-service:focus{
+    color: var(--hover-color);
+}
+
+.hero-section{
+    background-color: var(--title-color);
+}
+.contact-info a
+{
+    color: var(--body-color);
+    font-style: normal;
+}
+.contact-info:hover, 
+.contact-info:focus {
+    color: var(--hover-color);
+    /* first section */
+}
+h3{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--title-color)
+}
+
+/* second section */
+h2{
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 1.1;
+    color: var(--title-color);
+}
+/* third section */
+.filters-section .filters button{
+    background-color: #F4F4FD;
+    color:#4D5AE5;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 1.5;
+    border-color: #E7E9FC;
+    font-size: 16px;
+}
+.filters-section .filters button:hover{
+    color: #ffffff;
+    background-color: #404BBF;
+}
