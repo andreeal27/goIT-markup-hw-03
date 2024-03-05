@@ -45,7 +45,12 @@ black: #000000*/
 .container-pic{
     display: flex;
     margin-top: 48px;
-
+}
+.pic-cards li:hover,
+.pic-cards li:focus{
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.4),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16);
 }
 .container-pic li{
     margin-left: 24px;
@@ -88,6 +93,7 @@ black: #000000*/
 }
 .end-section{
     background-color: var(--title-color);
+    width: auto;
     height: 312px;
 
 }
@@ -146,6 +152,10 @@ h1 {
 .hero-section{
     background-color: var(--title-color);
     height: 600px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 /*  
 .hero-container{
@@ -189,6 +199,11 @@ h3{
     justify-content: center;
     margin-top: 120px;
 }
+.first-container li{
+  width: 264px;
+  height: 72px;
+  margin:24px;  
+}
 
 /* second section */
 h2{
@@ -214,14 +229,22 @@ h2{
     font-size: 16px;
     padding: 12px 24px;
 }
-.filters-section .filters button:hover{
+.filters-section .filters button:hover,
+.filters-section .filters button:focus{
     color: #ffffff;
     background-color: #404BBF;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12),
+    0 2px 1px 0 rgba(0,0,0,0.08)
+    0 3px 1px 0 rgba(0,0,0,0.1);
 }
 .second-title{
     display: flex;
     justify-content: center;
     margin-top: 120px;
+}
+.card-section2 h2{
+    margin-top: 120px;
+    margin-bottom: 72px;
 }
 .second-section{
     display: flex;
@@ -244,19 +267,134 @@ h2{
     background-color: #ffffff;
     margin: 24px;
     width: 264px;
-    height: 380px;
+    height: 428px;
     text-align: center;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.end-social{
+    display: flex;
+    flex-direction: column;
+    width: 208px;
+    height: 80px;
+    margin-left: 120px;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    gap:24px;
+    margin-top: 8px;
+}
+.social-links .icon svg{
+    width: 16px;
+    height: 16px;
+    color: #F4F4FD;
+}
+.social-links .icon{
+    width: 40px;
+    height: 40px;
+    background-color:#4D5AE5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links .icon:hover,
+.social-links .icon:focus{
+    background-color:#404BBF;
+}
+.social-link{
+    display: flex;
+    gap: 16px;
+}
+.social-link .icon{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+}
+.social-link svg{
+    color:#F4F4FD;
+    width: 24px;
+    height: 24px;
+}
+.social-link .icon:hover,
+.social-link .icon:focus{
+    background-color: #31D0AA;
 }
 .end-container{
-display: flex;
-width: 264px;
-height: 112px;
-padding-top: 100px;
-padding-bottom: 100px;
-flex-direction: column;
-align-content: center;
-margin-left: 20px;
+    display: flex;
+    width: 264px;
+    height: 112px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 20px;
+    }
+.end-social p{
+    color:#ffffff;
 }
+.icon2{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-top: 72px;
+    margin-bottom: 120px;
+}
+.icon2 li{
+    width: 168px;
+    height: 88px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    margin-left: 24px;
+    border-color: #8E8F99;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.icon2 svg{
+    width: 104px;
+    height: 56px;
+    margin: 16px 32px;
+    color:#8E8F99;
+}
+.icon2 svg:hover,
+.icon2 svg:focus{
+    color:#404BBF;
+}
+.icon2 li:hover,
+.icon2 li:focus{
+    border-color: #404BBF;
+}
+    
+.first-container svg{
+    width: 64px;
+    height: 64px;
+    color: #2E2F42;
+    margin:24px 100px;
+    cursor: pointer;
+}
+.first-container .rectangle{
+    width: 264px;
+    height: 112px;
+    background-color: #F4F4FD;
+
+}
+.first-container li{
+    overflow-wrap: break-word;
+}
+.social-container{
+    display: flex;
+    align-items: first baseline;
+    justify-content: flex-start;
+}
+
 
 
 
